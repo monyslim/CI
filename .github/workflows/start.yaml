@@ -6,7 +6,7 @@ on:
             - completed ## Specifies workflow is completed
 jobs: 
     pull_and_run_code:
-        runs-on: self-hosted
+        runs-on: ubuntu-latest
         steps:
             - name: "Remove container starter"
               run: "sudo docker rm -f starter || true"
