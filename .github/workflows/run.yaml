@@ -18,8 +18,8 @@ jobs:
                 password: ${{ secrets.DOCKERHUB_PASSWORD }}
             - name: "Build our code"
               env:
-                IMAGE_NAME: ci
-                VERSION: 1.0
+                IMAGE_NAME: runner
+                VERSION: 1
                 USERNAME: monyslim
               run: |
                   docker build -t $USERNAME/$IMAGE_NAME:$VERSION .
