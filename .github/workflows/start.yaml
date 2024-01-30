@@ -12,7 +12,7 @@ jobs:
               run: "sudo docker rm -f starter || true"
 
             - name: "Get the code from Docker Hub"
-              run: "sudo docker pull monyslim/new-runner:1"
+              run: "sudo docker pull monyslim/new-run:1"
 
             - name: "Run the image as a container"
-              run: "sudo docker run -d -p 80:80 --name starter monyslim/new-runner:1"
+              run: "sudo docker run -d -p 80:80 --name starter monyslim/new-run:1"
